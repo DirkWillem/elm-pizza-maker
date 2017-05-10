@@ -1,0 +1,88 @@
+.new-pizza {
+  background: $white;
+
+  .toppings {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid $border-color;
+
+    .topping {
+      cursor: pointer;
+      background: $green;
+      color: $white;
+      padding: 6px;
+      text-align: center;
+      font-weight: 500;
+      border-radius: 3px;
+      margin: 2px 0;
+      flex: 0 0 23%;
+      text-transform: uppercase;
+      font-size: 12px;
+      transition: all .2s ease-in-out;
+
+      &.added {
+        background: $green-dark;
+      }
+
+      @media screen and (max-width: 550px) {
+        flex: 0 0 49%;
+        padding: 10px 0;
+      }
+    }
+
+    .error-message {
+      flex: 4;
+    }
+  }
+
+  .pizza-form {
+    .selected-toppings {
+      padding: 0 30px 30px;
+      border-bottom: 1px solid #b8c8d0;
+      .empty {
+        font-style: italic;
+      }
+      .list {
+        border: 1px solid #b8c8d0;
+      }
+      .item {
+        > div {
+          display: flex;
+          align-content: center;
+          > img {
+            width: 18px;
+            margin: 0 8px 0 0;
+          }
+        }
+        border-bottom: 1px solid #b8c8d0;
+        &:last-child {
+          border-bottom: 0;
+        }
+        position: relative;
+        padding: 10px;
+
+        button {
+          border-radius: 2px;
+          display: flex;
+          justify-content: center;
+          cursor: pointer;
+          outline: 0;
+          border: 0;
+          background: $red;
+          color: $white;
+          width: 22px;
+          height: 22px;
+          position: absolute;
+          top: 11px;
+          right: 10px;
+        }
+      }
+    }
+  }
+
+  .pizza-form-buttons {
+    padding: 30px;
+  }
+}

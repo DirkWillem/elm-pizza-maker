@@ -1,0 +1,39 @@
+$white: #fff;
+$page-background: #eff4f9;
+
+$blue-light: #1094d2;
+$blue: #0074ae;
+$blue-dark: #035e8c;
+
+$green: #97c747;
+$green-dark: #68961b;
+
+$red: #d73a49;
+
+$text-dark: #545e6f;
+
+$border-color: #b8c8d0;
+
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: $page-background;
+  -webkit-font-smoothing: antialiased;
+  font: 300 16px/1.4 -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
+  color: $text-dark;
+  display: flex;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+@import "app";
+@import "new-pizza";
+@import "input";
+@import "button";
+@import "error";

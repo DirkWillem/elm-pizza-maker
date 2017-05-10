@@ -1,0 +1,16 @@
+.text-input-container {
+  padding: 30px;
+  input {
+    width: 100%;
+    border: 1px solid $border-color;
+    padding: 10px 15px;
+    border-radius: 2px;
+    font-size: 14px;
+    color: $blue-dark;
+    outline: 0;
+  }
+
+  .error-message {
+    margin: -1px 0 0;
+  }
+}
